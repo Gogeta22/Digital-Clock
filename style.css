@@ -1,0 +1,148 @@
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    background: url(./assets/images/img.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+h2{
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 14px;
+    text-align: center;
+}
+.clock{
+    display: flex;
+}
+.clock .box{
+    position: relative;
+    height: 150px;
+    width: 200px;
+    backdrop-filter: blur(5px);
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    margin-top: 50px;
+}
+.clock div{
+    margin: 5px;
+}
+.clock .box #hour{
+    height: 100%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 86px;
+    font-weight: 600;
+    color: #000801;
+}
+.clock .box #minutes{
+    height: 100%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 86px;
+    font-weight: 600;
+    color: #000801;
+}
+.clock .box #second{
+    height: 100%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 86px;
+    font-weight: 600;
+    color: #000801;
+}
+.clock .box .text{
+    height: 50px;
+    background: #FBCE9D;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    color: #022521;
+    font-family: "Montserrat", sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+.clock span{
+
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+}
+#hour{
+    font-size: 50px;
+}
+.clock .box2 {
+    margin-top: 155px;
+    padding: 5px;
+    background: #FBCE9D;
+    border-radius: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+@media (max-width: 640px) {
+    h2 {
+        font-size: 12px;
+        letter-spacing: 2px;
+    }
+
+    .clock {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .clock .box {
+        width: 140px;
+        height: 110px;
+    }
+
+    .clock .box span {
+        font-size: 50px;
+    }
+
+    .clock .box .text {
+        font-size: 18px;
+        height: 40px;
+    }
+
+    .clock .box2 {
+        margin-top: 20px;
+        font-size: 18px;
+    }
+}
+@media (min-width: 641px) and (max-width: 1024px) {
+    .clock .box {
+        width: 170px;
+        height: 130px;
+    }
+
+    .clock .box span {
+        font-size: 70px;
+    }
+
+    .clock .box .text {
+        font-size: 24px;
+        height: 45px;
+    }
+
+    .clock .box2 {
+        margin-top: 135px;
+        font-size: 24px;
+    }
+}
+@media (min-width: 1025px) {
+    .clock {
+        transform: scale(1);
+    }
+}
